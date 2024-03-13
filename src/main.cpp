@@ -1,25 +1,28 @@
-//============================================================================
-// Name        : C++실습.cpp
-// Author      : wjdvlf5456
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
 #include <stdio.h>
 using namespace std;
+
+extern int game(int answer, int guess, int chances);
+
 
 int main() {
 	
 	int answer;
 	int guess;
+	int chances = 5;
 	
 	cout << "Enter a answer: " <<"";
 	cin >> answer;
 	
-	cout << "Enter a guess: " << "";
-	cin >> guess;
+	while(chances > 0){
+		cout << "Enter a guess: " << "";
+		cin >> guess;
+		chances = game(answer, guess, chances);
+		
+		
+	}
+	
+	
 	
 	return 0;
 }
