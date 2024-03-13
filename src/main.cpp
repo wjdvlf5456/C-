@@ -21,6 +21,7 @@ int main() {
 		flag = game(answer, guess, flag);
 		//chances = game(answer, guess, chances);
 		
+		
 	}
 	
 	
