@@ -7,9 +7,19 @@
 //============================================================================
 
 #include <iostream>
+#include <stdio.h>
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	
+	int answer;
+	int guess;
+	
+	cout << "Enter a answer: " <<"";
+	cin >> answer;
+	
+	cout << "Enter a guess: " << "";
+	cin >> guess;
+	
 	return 0;
 }
