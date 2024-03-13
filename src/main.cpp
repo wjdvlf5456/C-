@@ -2,23 +2,24 @@
 #include <stdio.h>
 using namespace std;
 
-extern int game(int answer, int guess, int chances);
+extern bool game(int answer, int guess,bool flag);
 
 
 int main() {
 	
 	int answer;
 	int guess;
-	int chances = 5;
+	//int chances = 5;
+	bool flag = false;
 	
 	cout << "Enter a answer: " <<"";
 	cin >> answer;
 	
-	while(chances > 0){
+	while(flag == false){
 		cout << "Enter a guess: " << "";
 		cin >> guess;
-		chances = game(answer, guess, chances);
-		
+		flag = game(answer, guess, flag);
+		//chances = game(answer, guess, chances);
 		
 	}
 	
