@@ -41,12 +41,12 @@ int util() {
 
 	answer = (hundred * 100) + (ten * 10) + one;
 
-	if(hundred == 0){
-		cout << 0;
+//	if(hundred == 0){
+//		cout << 0;
+//
+//	}
 
-	}
-
-		cout << answer << endl;
+	//	cout << answer << endl;
 
 	return answer;
 }

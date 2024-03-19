@@ -4,7 +4,7 @@ using namespace std;
 
 // 게임 흐름, 스트라이크, 볼 처리 등
 
-bool game(int answer, int guess, bool flag) {
+int game(int answer, int guess, int chances) {
 
 	int aArray[4];
 	int gArray[4];
@@ -31,12 +31,10 @@ bool game(int answer, int guess, bool flag) {
 
 	if (answer == guess) {
 		cout << "You win!" << endl;
-		return true;
 
-		//return 0;
+		chances = 0;
 
-//	} else if (chances <= 0) {
-//		cout << "You lose!" << endl;
+		return chances;
 
 	} else {
 
@@ -57,8 +55,12 @@ bool game(int answer, int guess, bool flag) {
 
 	}
 
-	//chances--;
+	chances--;
 
-	//return chances;
-	return false;
+	if (chances <= 0) {
+		cout << "You lose!" << endl;
+
+	}
+
+	return chances;
 }
