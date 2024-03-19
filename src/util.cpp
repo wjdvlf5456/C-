@@ -1,5 +1,7 @@
 #include <iostream>
 #include <stdio.h>
+#include <cstdlib>
+
 using namespace std;
 
 // 숫자 랜덤 생성
@@ -11,6 +13,8 @@ int util() {
 	int hundred;
 	int ten;
 	int one;
+
+	srand((unsigned int) time(NULL));
 
 	hundred = rand() % 10;
 
